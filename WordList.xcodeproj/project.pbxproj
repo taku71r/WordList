@@ -15,6 +15,14 @@
 		FDE94611246D894600452529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE9460F246D894600452529 /* LaunchScreen.storyboard */; };
 		FDE9461C246D894600452529 /* WordListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9461B246D894600452529 /* WordListTests.swift */; };
 		FDE94627246D894600452529 /* WordListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE94626246D894600452529 /* WordListUITests.swift */; };
+		FDE94638246D898B00452529 /* word_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE94635246D898B00452529 /* word_blank.png */; };
+		FDE94639246D898B00452529 /* fin.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE94636246D898B00452529 /* fin.png */; };
+		FDE9463A246D898B00452529 /* title_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE94637246D898B00452529 /* title_logo.png */; };
+		FDE9463C246D9DBB00452529 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9463B246D9DBB00452529 /* QuestionViewController.swift */; };
+		FDE9463E246D9DF100452529 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9463D246D9DF100452529 /* FinishViewController.swift */; };
+		FDE94640246D9E1000452529 /* ListTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9463F246D9E1000452529 /* ListTableTableViewController.swift */; };
+		FDE94642246D9E4500452529 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE94641246D9E4500452529 /* AddViewController.swift */; };
+		FDE94644246E24DE00452529 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE94643246E24DE00452529 /* ListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		FDE94622246D894600452529 /* WordListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE94626246D894600452529 /* WordListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListUITests.swift; sourceTree = "<group>"; };
 		FDE94628246D894600452529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE94635246D898B00452529 /* word_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = word_blank.png; sourceTree = "<group>"; };
+		FDE94636246D898B00452529 /* fin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fin.png; sourceTree = "<group>"; };
+		FDE94637246D898B00452529 /* title_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_logo.png; sourceTree = "<group>"; };
+		FDE9463B246D9DBB00452529 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		FDE9463D246D9DF100452529 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		FDE9463F246D9E1000452529 /* ListTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableTableViewController.swift; sourceTree = "<group>"; };
+		FDE94641246D9E4500452529 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		FDE94643246E24DE00452529 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,7 @@
 		FDE94603246D894300452529 /* WordList */ = {
 			isa = PBXGroup;
 			children = (
+				FDE94634246D898B00452529 /* WordList素材 */,
 				FDE94604246D894300452529 /* AppDelegate.swift */,
 				FDE94606246D894300452529 /* SceneDelegate.swift */,
 				FDE94608246D894300452529 /* ViewController.swift */,
@@ -106,6 +123,11 @@
 				FDE9460D246D894600452529 /* Assets.xcassets */,
 				FDE9460F246D894600452529 /* LaunchScreen.storyboard */,
 				FDE94612246D894600452529 /* Info.plist */,
+				FDE9463B246D9DBB00452529 /* QuestionViewController.swift */,
+				FDE9463D246D9DF100452529 /* FinishViewController.swift */,
+				FDE9463F246D9E1000452529 /* ListTableTableViewController.swift */,
+				FDE94641246D9E4500452529 /* AddViewController.swift */,
+				FDE94643246E24DE00452529 /* ListTableViewCell.swift */,
 			);
 			path = WordList;
 			sourceTree = "<group>";
@@ -126,6 +148,16 @@
 				FDE94628246D894600452529 /* Info.plist */,
 			);
 			path = WordListUITests;
+			sourceTree = "<group>";
+		};
+		FDE94634246D898B00452529 /* WordList素材 */ = {
+			isa = PBXGroup;
+			children = (
+				FDE94635246D898B00452529 /* word_blank.png */,
+				FDE94636246D898B00452529 /* fin.png */,
+				FDE94637246D898B00452529 /* title_logo.png */,
+			);
+			path = "WordList素材";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE94638246D898B00452529 /* word_blank.png in Resources */,
+				FDE9463A246D898B00452529 /* title_logo.png in Resources */,
 				FDE94611246D894600452529 /* LaunchScreen.storyboard in Resources */,
 				FDE9460E246D894600452529 /* Assets.xcassets in Resources */,
+				FDE94639246D898B00452529 /* fin.png in Resources */,
 				FDE9460C246D894300452529 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE9463E246D9DF100452529 /* FinishViewController.swift in Sources */,
+				FDE94644246E24DE00452529 /* ListTableViewCell.swift in Sources */,
 				FDE94609246D894300452529 /* ViewController.swift in Sources */,
+				FDE94642246D9E4500452529 /* AddViewController.swift in Sources */,
 				FDE94605246D894300452529 /* AppDelegate.swift in Sources */,
+				FDE9463C246D9DBB00452529 /* QuestionViewController.swift in Sources */,
+				FDE94640246D9E1000452529 /* ListTableTableViewController.swift in Sources */,
 				FDE94607246D894300452529 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
