@@ -35,14 +35,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="START"/>
                                 <connections>
-                                    <action selector="startButtunTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEb-wg-iyJ"/>
-                                    <segue destination="4c8-aa-6ma" kind="presentation" identifier="toQuestionView" id="1T1-vb-r0W"/>
+                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="CVe-sT-Wlu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14109146296619718" green="0.36864039633661966" blue="0.16638866589859155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="4c8-aa-6ma" kind="presentation" identifier="toQuestionView" modalPresentationStyle="fullScreen" id="ioh-w1-NU4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,7 +55,7 @@
             <objects>
                 <viewController id="4c8-aa-6ma" customClass="QuestionViewController" customModule="WordList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yDE-gd-APt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="word_blank.png" translatesAutoresizingMaskIntoConstraints="NO" id="dlq-mg-6d6">
@@ -98,7 +100,7 @@
                         <outlet property="answerLabel" destination="yKb-CA-LON" id="LSY-JU-1Oj"/>
                         <outlet property="nextButton" destination="5QV-wJ-0dB" id="zSU-Ro-Jpy"/>
                         <outlet property="questionLabel" destination="aMc-C0-faM" id="Pnk-eY-str"/>
-                        <segue destination="oQE-8M-nwL" kind="presentation" identifier="toFinishView" id="pLa-k8-oIi"/>
+                        <segue destination="oQE-8M-nwL" kind="presentation" identifier="toFinishView" modalPresentationStyle="fullScreen" id="pLa-k8-oIi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JlU-eO-wEr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -110,7 +112,7 @@
             <objects>
                 <viewController id="oQE-8M-nwL" customClass="FinishViewController" customModule="WordList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ycw-BG-qoB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fin.png" translatesAutoresizingMaskIntoConstraints="NO" id="xtC-d9-0Vt">

@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func startButtunTapped() {
+    @IBAction func startButtonTapped() {
         let saveData = UserDefaults.standard
         if saveData.array(forKey: "WORD") != nil {
             if saveData.array(forKey: "WORD")!.count > 0 {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         } else {
             let alert = UIAlertController(
                 title: "単語",
-                message: "まずは「単語一覧」をタップして単語登録してください」",
+                message: "まずは「単語一覧」をタップして単語登録してください",
                 preferredStyle: .alert
             )
             alert.addAction(UIAlertAction(
